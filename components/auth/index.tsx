@@ -5,7 +5,7 @@ import Footer from '@/components/footer/FooterAuthDefault';
 import { useTheme } from 'next-themes';
 import { PropsWithChildren } from 'react';
 import { FaChevronLeft } from 'react-icons/fa6';
-import { HiBolt } from 'react-icons/hi2';
+import iconauth from '@/public/img/icon.jpg';
 import { IoMoon, IoSunny } from 'react-icons/io5';
 
 interface DefaultAuthLayoutProps extends PropsWithChildren {
@@ -34,7 +34,7 @@ export default function DefaultAuthLayout(props: DefaultAuthLayoutProps) {
               className={`mb-[160px] mt-8 flex w-full items-center justify-center `}
             >
               <div className="me-2 flex h-[76px] w-[76px] items-center justify-center rounded-md bg-white text-zinc-950 dark:text-zinc-900">
-                <HiBolt className="h-9 w-9" />
+                <iconauth className="h-9 w-9" />
               </div>
               <h5 className="text-4xl font-bold leading-5 text-white">
                 EDULAWYER
@@ -44,11 +44,12 @@ export default function DefaultAuthLayout(props: DefaultAuthLayoutProps) {
               className={`flex w-full flex-col items-center justify-center text-2xl font-bold text-white`}
             >
               <h4 className="mb-5 flex w-[600px] items-center justify-center rounded-md text-center text-2xl font-bold">
-                “This library has saved me countless hours of work and helped me
-                deliver stunning designs to my clients faster than ever before.”
+                Akhmad Dzidan djuanda<br/>
+                Andry Hilmi Muslimin<br/>
+                Raihan Miftah Andara Rum
               </h4>
               <h5 className="text-xl font-medium leading-5 text-zinc-300">
-                Sofia Davis - CTO Horizon AI
+                skibidi team
               </h5>
             </div>
           </div>
