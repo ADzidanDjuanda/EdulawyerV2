@@ -10,9 +10,8 @@ export const stripe = new Stripe(
     // Register this as an official Stripe plugin.
     // https://stripe.com/docs/building-plugins#setappinfo
     appInfo: {
-      name: 'Horizon AI Boilerplate',
-      version: '1.1.0',
-      url: 'https://github.com/horizon-ui/shadcn-nextjs-boilerplate'
+      name: 'Edulawyer',
+      version: '2.0',
     }
   }
 );

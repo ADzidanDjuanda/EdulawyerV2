@@ -37,7 +37,7 @@ export default function DefaultAuthLayout(props: DefaultAuthLayoutProps) {
                 <HiBolt className="h-9 w-9" />
               </div>
               <h5 className="text-4xl font-bold leading-5 text-white">
-                Horizon AI
+                EDULAWYER
               </h5>
             </div>
             <div
