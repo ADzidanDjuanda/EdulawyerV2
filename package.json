@@ -5,7 +5,7 @@
   "scripts": {
     "init": "npm install && npx shadcn@latest add --all",
     "dev": "next dev",
-    "build": "npm run innit",
+    "build": "npm run init",
     "start": "next start",
     "lint": "next lint",
     "preinstall": "npx npm-force-resolutions",
