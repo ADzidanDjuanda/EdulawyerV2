@@ -3,7 +3,7 @@
   "version": "2.1.1",
   "private": true,
   "scripts": {
-    "init": "npm install && yes | npx shadcn@latest add --all",
+    "init": "npm install && yes | npx shadcn@latest add --all && npm run init",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
