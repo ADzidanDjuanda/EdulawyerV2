@@ -224,7 +224,7 @@ export default function Settings(props: Props) {
               >
                 <Input
                   placeholder="Please enter your ocupation"
-                  defaultValue={props.user.ocupation ?? ''}
+                  defaultValue={props.user.phone?? ''}
                   type="text"
                   name="new role"
                   className={`mr-4 flex h-full max-w-full w-full items-center justify-center px-4 py-4 outline-none`}
