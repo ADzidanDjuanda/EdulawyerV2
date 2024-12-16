@@ -17,6 +17,8 @@ import React, { PropsWithChildren, useContext } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { HiX } from 'react-icons/hi';
 import { HiBolt } from 'react-icons/hi2';
+import logoImage from '../auth/edulaw.png';
+import Image from 'next/image';
 import { HiOutlineArrowRightOnRectangle } from 'react-icons/hi2';
 import { getRedirectMethod } from '@/utils/auth-helpers/settings';
 import { UserContext, UserDetailsContext } from '@/contexts/layout';
@@ -66,17 +68,24 @@ function Sidebar(props: SidebarProps) {
               </span>
               <div className={`mt-8 flex items-center justify-center`}>
                 <div className="me-2 flex h-[40px] w-[40px] items-center justify-center rounded-md bg-zinc-950 text-white dark:bg-white dark:text-zinc-950">
-                  <HiBolt className="h-5 w-5" />
+                <Image 
+                src={logoImage} 
+                alt="EduLawyer Logo" 
+                className="h-5 w-5"
+                width={45}  
+                height={45}
+              />
                 </div>
                 <h5 className="me-2 text-2xl font-bold leading-5 text-zinc-950 dark:text-white">
                   EDULAWYER
                 </h5>
-                <Badge
-                  variant="outline"
-                  className="my-auto w-max px-2 py-0.5 text-xs text-zinc-950 dark:border-none dark:bg-zinc-800 dark:text-white"
-                >
-                  FREE
-                </Badge>
+                <Image 
+                src={logoImage} 
+                alt="EduLawyer Logo" 
+                className="h-9 w-9"
+                width={45}  
+                height={45}
+              />
               </div>
               <div className="mb-8 mt-8 h-px bg-zinc-200 dark:bg-white/10" />
               {/* Nav item */}

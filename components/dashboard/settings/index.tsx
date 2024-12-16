@@ -117,7 +117,7 @@ export default function Settings(props: Props) {
                 {props.user.user_metadata.full_name}
               </p>
               <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400 md:mt-2 pl-4 md:text-base">
-                CEO and Founder
+                Mahasiswa
               </p>
             </div>
           </Card>
@@ -195,6 +195,8 @@ export default function Settings(props: Props) {
                   name="newEmail"
                   className={`mr-4 flex h-full max-w-full w-full items-center justify-center px-4 py-4 outline-none`}
                 />
+                
+
               </form>
               <Button
                 className="flex h-full max-h-full w-full items-center justify-center rounded-lg px-4 py-4 text-base md:ms-4 font-medium md:w-[300px]"
@@ -204,8 +206,42 @@ export default function Settings(props: Props) {
                 Update email
               </Button>
             </div>
+            <label
+              className="mb-3 ml-2.5 flex cursor-pointer px-2.5 font-bold leading-none text-zinc-950 dark:text-white"
+              htmlFor={'email'}
+            >
+              Your ocupation
+              <p className="ml-1 mt-[1px] text-sm font-medium leading-none text-zinc-500 dark:text-zinc-400">
+                (siswa/guru)
+              </p>
+            </label>      
+
+            <div className="mb-8 flex flex-col md:flex-row">
+              <form
+                className="w-full"
+                id="emailForm"
+                onSubmit={(e) => handleSubmitEmail(e)}
+              >
+                <Input
+                  placeholder="Please enter your ocupation"
+                  defaultValue={props.user.ocupation ?? ''}
+                  type="text"
+                  name="new role"
+                  className={`mr-4 flex h-full max-w-full w-full items-center justify-center px-4 py-4 outline-none`}
+                />
+                
+                
+              </form>
+              <Button
+                className="flex h-full max-h-full w-full items-center justify-center rounded-lg px-4 py-4 text-base md:ms-4 font-medium md:w-[300px]"
+                type="submit"
+                form="ocupationForm"
+              >
+                Ocupation
+              </Button>
+            </div>
           </Card>
-          <Notifications notifications={notifications} />
+
         </div>
       </div>
     </DashboardLayout>

@@ -1,11 +1,11 @@
 {
-  "name": "shadcn-nextjs-boilerplate",
+  "name": "edulawyer",
   "version": "2.1.1",
   "private": true,
   "scripts": {
     "init": "npm install && npx shadcn@latest add --all",
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run innit",
     "start": "next start",
     "lint": "next lint",
     "preinstall": "npx npm-force-resolutions",
@@ -87,7 +87,7 @@
     "lucide-react": "^0.379.0",
     "next": "^14.2.20",
     "next-themes": "^0.3.0",
-    "openai": "^4.47.1",
+    "openai": "^4.76.3",
     "php-serialize": "^4.1.1",
     "react": "18.3.1",
     "react-apexcharts": "1.4.1",
@@ -130,8 +130,8 @@
     "@types/react-dom": "18.3.0",
     "autoprefixer": "^10.4.19",
     "encoding": "^0.1.13",
-    "eslint": "^9.3.0",
-    "eslint-config-next": "14.2.3",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^14.2.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-tailwindcss": "^3.17.0",
@@ -149,5 +149,12 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
-  }
+  },
+  "description": "Sistem ini dirancang untuk meningkatkan kesadaran hukum masyarakat serta mengedukasi tenaga pendidikan dengan hak legalnya\r ---\r ### **Nama Anggota**\r - Akhmad Dzidan Djuanda (D121221081)\r - Andry Hilmi Muslimin (D121221086)\r - Raihan Miftah Andara Rum (D121221101)",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "license": "ISC"
 }

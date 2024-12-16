@@ -10,46 +10,6 @@ export default function Footer() {
           ©{new Date().getFullYear()} EduLawyer
         </span>
       </p>
-      <div>
-        <ul className="flex flex-wrap items-center gap-3 sm:flex-nowrap md:gap-10">
-          <li>
-            <a
-              target="blank"
-              href="mailto:hello@simmmple.com"
-              className="text-sm font-medium text-zinc-500 hover:text-zinc-950 dark:text-zinc-400"
-            >
-              FAQs
-            </a>
-          </li>
-          <li>
-            <a
-              target="blank"
-              href="https://horizon-ui.com/"
-              className="text-sm font-medium text-zinc-500 hover:text-zinc-950 dark:text-zinc-400"
-            >
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a
-              target="blank"
-              href="https://horizon-ui.com/boilerplate"
-              className="text-sm font-medium text-zinc-500 hover:text-zinc-950 dark:text-zinc-400"
-            >
-              Terms & Conditions
-            </a>
-          </li>
-          <li>
-            <a
-              target="blank"
-              href="https://blog.horizon-ui.com/"
-              className="text-sm font-medium text-zinc-500 hover:text-zinc-950 dark:text-zinc-400"
-            >
-              Refund Policy
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 }

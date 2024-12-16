@@ -7,7 +7,10 @@ import { PropsWithChildren } from 'react';
 import { FaChevronLeft } from 'react-icons/fa6';
 import { HiBolt } from 'react-icons/hi2';
 import { IoMoon, IoSunny } from 'react-icons/io5';
-import edulawicon from '@/public/img/edulaw.png';
+import Image from 'next/image';
+import logoImage from './edulaw.png';
+
+
 
 interface DefaultAuthLayoutProps extends PropsWithChildren {
   children: JSX.Element;
@@ -19,7 +22,7 @@ export default function DefaultAuthLayout(props: DefaultAuthLayoutProps) {
   const { theme, setTheme } = useTheme();
   return (
     <div className="relative h-max dark:bg-zinc-950">
-      <div className="mx-auto flex w-full flex-col justify-center px-5 pt-0 md:h-[unset] md:max-w-[66%] lg:h-[100vh] lg:max-w-[66%] lg:px-6 xl:pl-0 ">
+      <div className="mx-auto flex w-full flex-col justify-center px-5 pt-0 md:h-[unset] md:maxggi-w-[66%] lg:h-[100vh] lg:max-w-[66%] lg:px-6 xl:pl-0 ">
         <a className="mt-10 w-fit text-zinc-950 dark:text-white" href="/">
           <div className="flex w-fit items-center lg:pl-0 lg:pt-0 xl:pt-0">
             <FaChevronLeft className="mr-3 h-[13px] w-[8px] text-zinc-950 dark:text-white" />
@@ -35,7 +38,13 @@ export default function DefaultAuthLayout(props: DefaultAuthLayoutProps) {
               className={`mb-[160px] mt-8 flex w-full items-center justify-center `}
             >
               <div className="me-2 flex h-[76px] w-[76px] items-center justify-center rounded-md bg-white text-zinc-950 dark:text-zinc-900">
-                <edulawicon className="h-9 w-9" />
+              <Image 
+                src={logoImage} 
+                alt="EduLawyer Logo" 
+                className="h-9 w-9"
+                width={45}  
+                height={45}
+              />
               </div>  
               <h5 className="text-4xl font-bold leading-5 text-white">
                 EDULAWYER
